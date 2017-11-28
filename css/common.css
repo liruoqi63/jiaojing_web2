@@ -1,0 +1,69 @@
+/*顶部导航*/
+.index-header{
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:3000;
+	background: #1c7bd9;
+}
+.index-header .index-header-content{
+	width:100%;
+	height: 60px;
+	line-height: 60px;
+	color:#fff;
+	font-size:22px;
+}
+.index-header .index-header-content .in-block{
+	display: inline-block;
+}
+.left-info{
+	font-size:16px;
+	list-style: none;
+	display: inline-block;
+	transform: translateY(-3px);
+}
+.right-info{
+	float:right;
+	font-size:14px;
+	list-style: none;
+	margin: 0;
+}
+.right-info li{
+	display: inline-block;
+	cursor:pointer;
+	position:relative;
+	padding:0 10px;
+}
+.right-info li:not(:first-child):before{
+	content: '';
+	display: block;
+	width: 1px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+/*顶部导航结束*/
+.c-right{
+	position: absolute;
+	top:66px;
+	right:0px;
+	z-index: 3000;
+	margin-right:20px;
+	font-size:16px;
+	display: block;
+	background: transparent;
+	color:#fff;
+	padding:5px 10px;
+	border-radius:3px;
+}
+#app{
+	min-width:800px;
+	overflow: auto;
+}
+.searchBox{
+	margin:15px 0;
+	border:solid 1px #ccc;
+}
